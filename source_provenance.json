@@ -67,5 +67,11 @@
     "public_file": "src/inference.py",
     "source": "Phase-7 strict checkpoint loading and Phase-6 residual reconstruction",
     "note": "Notebook path/report orchestration removed."
+  },
+  "publication": {
+    "github_repository": "https://github.com/rankared/R-DeepDEM",
+    "zenodo_reserved_doi": "10.5281/zenodo.22942515",
+    "zenodo_doi_url": "https://doi.org/10.5281/zenodo.22942515",
+    "zenodo_status": "reserved_unpublished"
   }
 }

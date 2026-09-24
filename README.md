@@ -209,4 +209,11 @@ Third-party source products retain their provider terms.
 
 Article citation: pending final bibliographic record.
 
-Zenodo DOI: pending deposit publication.
+GitHub repository: https://github.com/rankared/R-DeepDEM
+
+Zenodo DOI: 10.5281/zenodo.22942515
+
+DOI URL: https://doi.org/10.5281/zenodo.22942515
+
+The Zenodo DOI is reserved for the companion supporting-data record and
+will resolve after that record is published.
