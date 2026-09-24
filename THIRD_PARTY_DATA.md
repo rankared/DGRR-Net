@@ -1,6 +1,6 @@
 # Third-party source data
 
-R-DeepDEM was developed using publicly available geospatial source products.
+DGRR-Net was developed using publicly available geospatial source products.
 
 The raw source rasters are not redistributed in this repository or in the
 companion supporting-data deposit.

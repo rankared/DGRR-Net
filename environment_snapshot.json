@@ -1,5 +1,5 @@
 {
-  "release": "R-DeepDEM",
+  "release": "DGRR-Net",
   "purpose": "Environment used for final public-release validation.",
   "versions": {
     "python": "3.13.15",

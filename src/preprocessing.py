@@ -1,5 +1,5 @@
 """
-Multi-ROI preprocessing used for the frozen R-DeepDEM Protocol-A
+Multi-ROI preprocessing used for the frozen DGRR-Net Protocol-A
 benchmark.
 
 Scientific lineage

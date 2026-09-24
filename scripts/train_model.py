@@ -154,7 +154,7 @@ def main():
         required=True,
         type=Path,
         help=(
-            "R-DeepDEM_supporting_data directory."
+            "DGRR-Net_supporting_data directory."
         ),
     )
 

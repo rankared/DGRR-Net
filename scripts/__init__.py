@@ -1,1 +1,1 @@
-"""R-DeepDEM reproducibility command-line scripts."""
+"""DGRR-Net reproducibility command-line scripts."""

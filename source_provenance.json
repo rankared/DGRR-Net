@@ -1,5 +1,5 @@
 {
-  "release_component": "R-DeepDEM public source",
+  "release_component": "DGRR-Net public source",
   "proposed_model": {
     "public_file": "src/model.py",
     "source": "phase-6.ipynb code-cell 63",
@@ -69,7 +69,7 @@
     "note": "Notebook path/report orchestration removed."
   },
   "publication": {
-    "github_repository": "https://github.com/rankared/R-DeepDEM",
+    "github_repository": "https://github.com/rankared/DGRR-Net",
     "zenodo_reserved_doi": "10.5281/zenodo.22942515",
     "zenodo_doi_url": "https://doi.org/10.5281/zenodo.22942515",
     "zenodo_status": "reserved_unpublished"

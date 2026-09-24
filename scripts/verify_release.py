@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Verify the integrity and checkpoint compatibility of the public
-R-DeepDEM release.
+DGRR-Net release.
 
 Without --patch-root:
     checkpoint hash

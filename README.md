@@ -1,6 +1,6 @@
-# R-DeepDEM
+# DGRR-Net
 
-R-DeepDEM is the public reproducibility package for dual-scale terrain-aware
+DGRR-Net is the public reproducibility package for dual-scale terrain-aware
 residual refinement of SRTM elevation using terrain derivatives and NAIP
 optical information on a 1 m target grid.
 
@@ -56,7 +56,7 @@ The split is spatially x-blocked within each ROI with buffer columns.
 
 ## Repository structure
 
-R-DeepDEM/
+DGRR-Net/
 - configs/
 - src/
 - scripts/
@@ -80,7 +80,7 @@ Run commands from the repository root.
 
 ## Verify the released checkpoint without raw patches
 
-    python -m scripts.verify_release --support-dir /path/to/R-DeepDEM_supporting_data
+    python -m scripts.verify_release --support-dir /path/to/DGRR-Net_supporting_data
 
 This verifies:
 
@@ -113,11 +113,11 @@ Patch preparation can be run with:
 
 ## Verify using reconstructed real patches
 
-    python -m scripts.verify_release         --support-dir /path/to/R-DeepDEM_supporting_data         --patch-root /path/to/patches
+    python -m scripts.verify_release         --support-dir /path/to/DGRR-Net_supporting_data         --patch-root /path/to/patches
 
 ## Evaluate the released checkpoint
 
-    python -m scripts.evaluate_model         --support-dir /path/to/R-DeepDEM_supporting_data         --patch-root /path/to/patches         --split test
+    python -m scripts.evaluate_model         --support-dir /path/to/DGRR-Net_supporting_data         --patch-root /path/to/patches         --split test
 
 The released E2c checkpoint has:
 
@@ -132,7 +132,7 @@ The release audit reproduced the frozen 25-patch elevation benchmark.
 The manuscript paired statistical analysis can be reproduced without the
 original raster data:
 
-    python -m scripts.reproduce_statistics         --support-dir /path/to/R-DeepDEM_supporting_data
+    python -m scripts.reproduce_statistics         --support-dir /path/to/DGRR-Net_supporting_data
 
 The released per-patch table reproduces all 27 planned E2c comparisons,
 including:
@@ -209,7 +209,7 @@ Third-party source products retain their provider terms.
 
 Article citation: pending final bibliographic record.
 
-GitHub repository: https://github.com/rankared/R-DeepDEM
+GitHub repository: https://github.com/rankared/DGRR-Net
 
 Zenodo DOI: 10.5281/zenodo.22942515
 
