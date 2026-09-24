@@ -1,0 +1,71 @@
+{
+  "release_component": "R-DeepDEM public source",
+  "proposed_model": {
+    "public_file": "src/model.py",
+    "source": "phase-6.ipynb code-cell 63",
+    "source_sha256": "5c1b8ba887bd371086920417fc3d26c59791800769e731f99bc0be8686e1ba42",
+    "status": "exact checkpoint-compatible model definitions extracted from successful executed cell"
+  },
+  "global_only_ablation": {
+    "public_file": "src/global_only.py",
+    "source": "phase-6.ipynb code-cell 31",
+    "source_sha256": "6e347ed8b9d995c8fc412abc81bbcf91f131487c069023ad27c67091a425ca53"
+  },
+  "dataset": {
+    "public_file": "src/dataset.py",
+    "source": "phase-7.ipynb code-cell 0",
+    "source_sha256": "ce8a1ad131a499d242aab9dfb09be7028a89fc0f4e064ff5d5fa9b44d07b8efa",
+    "public_adaptation": "Added runtime resolution of Zenodo patch_relpath to local patch_file; tensor construction is unchanged."
+  },
+  "preprocessing": {
+    "public_file": "src/preprocessing.py",
+    "source_cells": {
+      "roi_manifest": "Phase-5 code-cell 10",
+      "availability": "Phase-5 code-cell 11",
+      "final_mosaic_export": "Phase-5 code-cell 19",
+      "bias_features_patching": "Phase-5 code-cell 23",
+      "protocol_a_split": "Phase-5 code-cell 24",
+      "normalization": "Phase-5 code-cell 40"
+    },
+    "source_sha256": {
+      "10": "e1d81de6da3d89d46ea74d55b63fd97fedb5d77340cc43ac75c3c131fafd953e",
+      "11": "c500b736a7891209425ee29c49d5a1d3d1cdd0f070550ab85458bc1215a062fd",
+      "19": "e7b5b2ed151f9dded3270e7027bd11e8236d8a49f9fb58468e39180f5f52b862",
+      "23": "78ecf018353086c9664b0b7f98bd2d93ef447959d3a1e6a47b403d29b8fc75ca",
+      "24": "292e86318f4cb599f5f4bda1ee48f7d5143130e0f5f12fd5b2fa3e09898ae3d0",
+      "40": "61cfc1b09ec04a962b49884cad335dc31e82a9b545ce4b54964f4fbdd73360b7"
+    }
+  },
+  "terrain_metrics": {
+    "public_file": "src/metrics.py",
+    "sources": [
+      "phase-7.ipynb code-cell 0",
+      "phase-7.ipynb code-cell 2"
+    ],
+    "source_sha256": [
+      "ce8a1ad131a499d242aab9dfb09be7028a89fc0f4e064ff5d5fa9b44d07b8efa",
+      "d90c11c4469dd3fc347dbf14c8f8375d11d9208ec4467cfad6f64b435bfa6235"
+    ]
+  },
+  "hydrology": {
+    "public_file": "src/hydrology.py",
+    "source": "phase7D_authoritative_hydrology_source.py",
+    "source_sha256": "9ac523964809be373c00a44486a027621126c6267e43cb9c26bd45cd3c2ab6f5",
+    "status": "pure scientific kernel extracted; Drive/report/figure orchestration removed"
+  },
+  "statistics": {
+    "public_file": "src/statistics.py",
+    "source": "Phase7B.ipynb code-cell 4",
+    "source_sha256": "cfe44a69b9f413703fa733c2c8c66d90c4965a5e95eb9f03dc2e6b080829217e"
+  },
+  "training": {
+    "public_file": "src/train.py",
+    "source": "phase-6.ipynb code-cell 63",
+    "note": "Loss definitions are exact; training loop refactored into a reusable function without changing objective, AMP, clipping or optimizer behavior."
+  },
+  "inference": {
+    "public_file": "src/inference.py",
+    "source": "Phase-7 strict checkpoint loading and Phase-6 residual reconstruction",
+    "note": "Notebook path/report orchestration removed."
+  }
+}

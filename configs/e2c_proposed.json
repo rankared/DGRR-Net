@@ -1,0 +1,61 @@
+{
+  "phase": "Phase-6",
+  "experiment_id": "E2c_dual_scale_elevation",
+  "model": "E2cDualScaleResidualUNet",
+  "epochs": 80,
+  "batch_size": 2,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "scheduler": "CosineAnnealingLR",
+  "eta_min": 1e-05,
+  "lambda_slope": 0.5,
+  "base_channels": 32,
+  "dropout": 0.05,
+  "amp": true,
+  "gradient_clip_norm": 5.0,
+  "checkpoint_selection": "lowest validation MAE",
+  "input_channels": 11,
+  "seed": 42,
+  "train_patches": 107,
+  "validation_patches": 27,
+  "test_patches": 25,
+  "elevation_mode": "dual_scale_global_plus_patch_local",
+  "controlled_change": {
+    "E2a": "global SRTM channel only",
+    "E2b": "patch-local SRTM channel only",
+    "E2c": "global SRTM plus patch-local SRTM"
+  },
+  "input_layout": [
+    "global_normalized_srtm",
+    "patch_local_normalized_srtm",
+    "dzdx",
+    "dzdy",
+    "laplacian",
+    "naip_R",
+    "naip_G",
+    "naip_B",
+    "naip_NIR",
+    "ndwi_like",
+    "ndvi_like"
+  ],
+  "architecture_reconstruction": {
+    "normalization": "GroupNorm",
+    "groups": 8,
+    "activation": "SiLU",
+    "decoder_upsampling": "bilinear",
+    "align_corners": false,
+    "dropout": 0.05,
+    "source_status": "Reconstructed from E2a checkpoint; original source unavailable"
+  },
+  "split_path": "protocol_a_split.csv",
+  "normalization_source": "normalization_stats.json",
+  "model_parameters": 3807489,
+  "public_release": {
+    "role": "proposed dual-scale model",
+    "split_artifact": "protocol_a_split.csv",
+    "normalization_artifact": "normalization_stats.json",
+    "checkpoint_artifact": "rdeepdem_e2c_best.pt",
+    "checkpoint_sha256": "e85cf834cbe50bb356a4021980f9fe7f642b3966af44471e42a2cc57acc985a8"
+  }
+}

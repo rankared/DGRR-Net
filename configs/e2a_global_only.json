@@ -1,0 +1,29 @@
+{
+  "experiment_id": "E2a_plain_unet_original_norm",
+  "model": "E2aPlainResidualUNet",
+  "epochs": 80,
+  "batch_size": 2,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "scheduler": "CosineAnnealingLR",
+  "eta_min": 1e-05,
+  "lambda_slope": 0.5,
+  "base_channels": 32,
+  "dropout": 0.05,
+  "amp": true,
+  "gradient_clip_norm": 5.0,
+  "checkpoint_selection": "lowest validation MAE",
+  "train_patches": 107,
+  "validation_patches": 27,
+  "test_patches": 25,
+  "normalization": "normalization_stats.json",
+  "elevation_mode": "original",
+  "seed": 42,
+  "split_path": "protocol_a_split.csv",
+  "public_release": {
+    "role": "global-only ablation",
+    "split_artifact": "protocol_a_split.csv",
+    "normalization_artifact": "normalization_stats.json"
+  }
+}
